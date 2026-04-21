@@ -1,56 +1,53 @@
 {
-  "editor.formatOnSave": true,
-  "editor.fontLigatures": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "vim.handleKeys": {
-    "<C-b>": false,
-    "<C-k>": false,
-    "<C-c>": false,
-    "<C-u>": false,
-    "<C-v>": false,
-    "<C-x>": false,
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-d>": false,
-    "<C-w>": false,
-    "<C-h>": false,
-    "<C-p>": false
-  },
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "editor.minimap.enabled": false,
-  "workbench.startupEditor": "none",
-  "explorer.confirmDelete": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.unicodeHighlight.allowedCharacters": {
-    " ": true
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "prettier.singleQuote": true,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#04ADEA",
-    "terminalCursor.foreground": "#04ADEA"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "prettier.semi": false,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.wordWrap": "on",
-  "git.openRepositoryInParentFolders": "never",
-  "typescript.preferences.autoImportFileExcludePatterns": ["vue-router"],
-  "window.menuBarVisibility": "toggle",
-  "vim.easymotionDimColor": "#6B2C7D",
-  "vim.highlightedyank.color": "#6B2C7D",
-  "css.lint.unknownAtRules": "ignore",
-  "window.zoomLevel": -1,
-  "tailwindCSS.includeLanguages": {
-    "blade": "html"
-  }
+    "workbench.startupEditor": "none",
+    "idf.hasWalkthroughBeenShown": true,
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-k>": false,
+        "<C-c>": false,
+        "<C-u>": false,
+        "<C-v>": false,
+        "<C-x>": false,
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-d>": false,
+        "<C-w>": false,
+        "<C-h>": false,
+        "<C-p>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "cmake.pinnedCommands":  [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask",
+    ],
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "./build/conan_toolchain.cmake"
+    },
+    "cmake.cmakePath": "/usr/local/bin/cmake",
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.generator": "Unix Makefiles",
+    "editor.rulers": [
+        {
+            "column": 120,
+            "color": "#ffffff"
+        }
+    ],
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/home/{USER}/.conan2/**"
+    ],
 }
